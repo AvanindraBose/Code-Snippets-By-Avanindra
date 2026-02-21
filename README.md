@@ -1,0 +1,1 @@
+This Repository will consist of code snippets that can be used during contests.
