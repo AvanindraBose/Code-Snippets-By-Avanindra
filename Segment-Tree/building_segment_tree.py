@@ -1,5 +1,8 @@
 # this segment tree building is only for range-sum. this will give an idea on the implementation of segment tree.
 
+# TC -> O(n)
+# Sc -> O(2*n) + O(log(n))
+
 class SegmentTree:
     def __init__(self,n):
         self.seg_tree = [0]*(2*n)
