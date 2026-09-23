@@ -1,6 +1,7 @@
 # In this I will learn to apply range query in segment tree
 # For Example Find out the sum of elements from index 2,4.
-
+# T.C -> O(log(n))
+# S.C -> O(2*n) + O(logn)
 class SegmentTree:
     def __init__(self,n):
         self.seg_tree = [0]*(2*n)
