@@ -40,6 +40,17 @@ class Graph():
 
         return adj
 
+    def DFS(self,node,adj,vis,result):
+
+        vis[node] = True
+        result.append(node)
+
+        for nbr in adj[node]:
+            if not vis[nbr] :
+                self.DFS(nbr,adj,vis,result)
+
+        return
+    
 if __name__ == "__main__":
     # LeetCode-style input
     graph = Graph()
@@ -58,5 +69,10 @@ if __name__ == "__main__":
     adj = graph.create_adj_list(n,edges)
 
     print(adj)
+    vis = [False]*(n)
+    result = []
+    graph.DFS(0,adj,vis,result)
+
+    print(result)
 
     
