@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
+#  TC -> O(V+E)
+#  SC -> O(V+E)
 class Graph():
     def plot_graph(self,n, edges):
         """Plot an undirected graph given n nodes and a list of edges."""
